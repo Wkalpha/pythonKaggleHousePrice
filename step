@@ -17,3 +17,6 @@ Using XGBoostRegressor or other model with your input data.
 
 6. Tuneing model paramater
 This step can imporve your model performance.
+
+In summary we probably know how to build a model, but we actully don't know, because we can't image the result.
+We need hand-on. See below.
