@@ -22,6 +22,16 @@ OS: Windows 10
 Editor: jupyter  
 Language: python  
 
-So we don't need to collect data because kaggle already do this for us, we just need download and use.
+So we don't need to collect data because kaggle already do this for us, we just need download and use.  
 
+I want to quickly bulid model and submit to kaggle...see below
 
+    import pandas as pd
+    import numpy as np
+    
+    train = pd.read_csv('Desktop/house-prices-advanced-regression-techniques/train.csv')
+    test  = pd.read_csv('Desktop/house-prices-advanced-regression-techniques/test.csv')
+    
+    feature = train.drop(['Id'],axis=1) # Drop Id column, because this column is unnecessary for prediction
+    y = feature['SalePrice'] # Put target column into y
+    
