@@ -14,7 +14,7 @@ When prepare all need data, we can use it to training our model like XGBoostRegr
 6. Tuneing model paramater  
 This step can imporve your model performance.
 
-# Let's begin
+# Let's quickly bulid XGBoost model!
 For our practice, I want to use the classical liner problem <a href="https://www.kaggle.com/c/house-prices-advanced-regression-techniques/overview" title="Title">House price</a>   
 
 This is my enviroment:  
@@ -58,4 +58,25 @@ I want to quickly bulid XGBoost model and submit to kaggle...see below
     # Put test's column into submission
     submission_x = test[['LotArea','TotalBsmtSF']]
     xgboost.predict(submission_x)
-    # 0.30590
+    
+    submission_id = test['Id']
+    submission_x = test[['LotArea','TotalBsmtSF']]
+    submission_y = xgboost.predict(submission_x)
+    
+    # Because we use log1p to transform saleprice, so we need reverse by using np.exp
+    expo = np.exp(submission_y)
+    
+    # First column is Id, second is saleprice
+    output = pd.DataFrame({'Id': submission_id,
+                           'SalePrice': expo})
+                           
+    # Out put and submit to kaggle
+    output.to_csv('Desktop/submission0809.csv', index=False,float_format ='%f')
+    
+    # Finally my score is 0.30590, this score is not good, because I did't preprocess the data, use few column...etc,
+    # I just want to quickly build a model
+    # Next I will preprocess the data and use some important column to bulid my model
+    # Then I want to know the different between old and new model
+
+# Let's begin
+    
