@@ -23,7 +23,6 @@ Editor: jupyter
 Language: python  
 
 So we don't need to collect data because kaggle already do this for us, we just need download and use.  
-
 I want to quickly bulid XGBoost model and submit to kaggle...see below
 
     import pandas as pd
@@ -63,7 +62,7 @@ I want to quickly bulid XGBoost model and submit to kaggle...see below
     submission_x = test[['LotArea','TotalBsmtSF']]
     submission_y = xgboost.predict(submission_x)
     
-    # Because we use log1p to transform saleprice, so we need reverse by using np.exp
+    # Because we use log1p to transform saleprice, so we need reverse it by using np.exp function
     expo = np.exp(submission_y)
     
     # First column is Id, second is saleprice
@@ -78,5 +77,16 @@ I want to quickly bulid XGBoost model and submit to kaggle...see below
     # Next I will preprocess the data and use some important column to bulid my model
     # Then I want to know the different between old and new model
 
-# Let's begin
+# 開始吧！Exploratory Data Analysis(EDA)
+EDA 主要是將資料以視覺化的方式呈現，譬如長條圖、散佈圖、盒形圖等 
+EDA 能快速幫助我了解我能夠對資料做什麼樣的處理  
+我能夠從這些圖表中，思考如何對特徵做處理、結合、創造，進一步來說就是認識資料  
+舉例來說，我想看看 SalsePrice 與 GrLivArea 的分布情形
+Python 有很棒的套件可以實現這個需求
+
+    import matplotlib.pyplot as plt
+    plt.scatter(SalsePrice,GrLivArea)
+
+結果：
+
     
