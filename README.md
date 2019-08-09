@@ -24,14 +24,38 @@ Language: python
 
 So we don't need to collect data because kaggle already do this for us, we just need download and use.  
 
-I want to quickly bulid model and submit to kaggle...see below
+I want to quickly bulid XGBoost model and submit to kaggle...see below
 
     import pandas as pd
     import numpy as np
+    import matplotlib.pyplot as plt
+    from xgboost import XGBRegressor
+    from sklearn.model_selection import train_test_split
     
     train = pd.read_csv('Desktop/house-prices-advanced-regression-techniques/train.csv')
     test  = pd.read_csv('Desktop/house-prices-advanced-regression-techniques/test.csv')
+    pd.set_option('display.max_columns', None) # show all columns
+    pd.set_option('display.max_row', None) # show all rows  
     
-    feature = train.drop(['Id'],axis=1) # Drop Id column, because this column is unnecessary for prediction
-    y = feature['SalePrice'] # Put target column into y
+    # Drop 'Id' column, because we don't need this for our model
+    feature = train.drop(['Id',],axis = 1)
+
+    feature = feature[feature.GrLivArea < 4500]
+    feature.reset_index(drop=True, inplace=True)
+
+    # Select two columns into x
+    x = feature[['LotArea','TotalBsmtSF']]
+    # Transform to normal distribution
+    y = np.log1p(feature['SalePrice'])
     
+    # Split the train data, 80% to train and 20% to validation
+    x_train, x_test, y_train, y_test = train_test_split(x, y, test_size = 0.2, random_state = 100)
+    
+    # max_depth more bigger model more easly overfitting
+    xgboost = XGBRegressor(max_depth=6)
+    xgboost.fit(x_train,y_train)
+    
+    # Put test's column into submission
+    submission_x = test[['LotArea','TotalBsmtSF']]
+    xgboost.predict(submission_x)
+    # 0.30590
