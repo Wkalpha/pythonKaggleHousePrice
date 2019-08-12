@@ -128,4 +128,5 @@ Python 有很棒的套件可以輕鬆達成
                            
     # 輸出為 submission 檔案，並提交給 Kaggle
     output.to_csv('Desktop/submission0809.csv', index=False,float_format ='%f')
-最後我得到
+最後我得到 0.2348，雖然有進步，但仍然不夠，因此我決定增加一些特徵幫助建立模型  
+經過一番思考，決定增加
