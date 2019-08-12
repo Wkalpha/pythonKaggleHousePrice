@@ -78,11 +78,9 @@ I want to quickly bulid XGBoost model and submit to kaggle...see below
     # Then I want to know the different between old and new model
 
 # 開始吧！Exploratory Data Analysis(EDA)
-EDA 主要是將資料以視覺化的方式呈現，譬如長條圖、散佈圖、盒形圖等   
-幫助我從這些圖表中，思考如何對特徵做處理、結合、創造  
-進一步來說就是認識資料  
-舉例來說，我想看看 SalsePrice 與 GrLivArea 的分布情形
-Python 有很棒的套件可以實現這個需求
+EDA 主要是將資料以視覺化的方式呈現，譬如長條圖、散佈圖、盒形圖等，幫助我從這些圖表中，思考如何對特徵做處理、結合、創造，進一步來說就是認識資料  
+舉例來說，我想了解 SalsePrice 與 GrLivArea 的分布情形
+Python 有很棒的套件可以輕鬆達成
 
     import matplotlib.pyplot as plt
     plt.scatter(GrLivArea,SalsePrice)
