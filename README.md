@@ -130,7 +130,7 @@ Python 有很棒的套件可以輕鬆達成
     output.to_csv('Desktop/submission0809.csv', index=False,float_format ='%f')
     
 最後我得到 0.2348，雖然有進步，但仍然不夠，因此我決定增加一些特徵幫助建立模型  
-再增加特徵之前我還想知道 OverallQual 和 SalePrice 的關係，因為 OverallQual 是類別變數，所以我打算用盒鬚圖來看  
+增加特徵之前我還想知道 OverallQual 和 SalePrice 的關係，因為 OverallQual 是類別變數，所以我打算用盒鬚圖來看  
 完整程式碼如下  
     
     # Box plot OverallQual and SalePrice
