@@ -83,7 +83,7 @@ Python 有很棒的套件可以輕鬆達成
   
 可以發現這個圖形並不太符合線性分布，因為有存在異常值 
 我擔心異常值會影響到模型精度(非絕對)，因此決定刪除 X 軸大於 4500 的點  
-參見下列程式碼  
+完整程式碼如下  
 
     import pandas as pd
     import numpy as np
@@ -122,11 +122,10 @@ Python 有很棒的套件可以輕鬆達成
     # Because we use log1p to transform saleprice, so we need reverse it by using np.exp function
     expo = np.exp(submission_y)
     
-    # First column is Id, second is saleprice
+    # 第一個欄位是 ID，再來是 SalePrice
     output = pd.DataFrame({'Id': submission_id,
                            'SalePrice': expo})
                            
-    # Out put and submit to kaggle
+    # 輸出為 submission 檔案，並提交給 Kaggle
     output.to_csv('Desktop/submission0809.csv', index=False,float_format ='%f')
-    
-    # 最後我得到 0.2348，
+最後我得到
