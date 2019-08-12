@@ -128,5 +128,13 @@ Python 有很棒的套件可以輕鬆達成
                            
     # 輸出為 submission 檔案，並提交給 Kaggle
     output.to_csv('Desktop/submission0809.csv', index=False,float_format ='%f')
+    
 最後我得到 0.2348，雖然有進步，但仍然不夠，因此我決定增加一些特徵幫助建立模型  
-經過一番思考，決定增加
+再增加特徵之前我還想知道 OverallQual 和 SalePrice 的關係，因為 OverallQual 是類別變數，所以我打算用盒鬚圖來看  
+完整程式碼如下  
+    
+    # Box plot OverallQual and SalePrice
+    data = pd.concat([y, x['OverallQual']], axis=1)
+    f, ax = plt.subplots(figsize=(8, 6))
+    fig = sns.boxplot(x="OverallQual", y="SalePrice", data=data)
+    fig.axis(ymin=10, ymax=14)
