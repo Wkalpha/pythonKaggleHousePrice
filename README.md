@@ -1,6 +1,6 @@
 # What is common step when build the model?
 1. Import data (Of course)  
-Train and test data should be import.  
+N 
 2. Exploratory data analysis(EDA) your data  
 Understand data that help you how to preprocess data.  
 3. Preprocess data(Garbage in garbage out)  
