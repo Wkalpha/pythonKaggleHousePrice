@@ -138,3 +138,6 @@ Python 有很棒的套件可以輕鬆達成
     f, ax = plt.subplots(figsize=(8, 6))
     fig = sns.boxplot(x="OverallQual", y="SalePrice", data=data)
     fig.axis(ymin=10, ymax=14)
+    
+結果：  
+![image](https://github.com/Wkalpha/pythonKaggleHousePrice/blob/master/Boxplot.png)
