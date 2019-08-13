@@ -1,18 +1,17 @@
-# What is common step when build the model?
-1. Import data (Of course)  
-No data no model
-2. Exploratory data analysis(EDA) your data  
-Understand data that help you how to preprocess data.  
-3. Preprocess data(Garbage in garbage out)  
-Fill NaN : Model can't handle NaN data, so we need to fill that with median or zero or something.  
-Delete outlier : Outlier data will reduce model performance, so we need decide delete or not.  
-Convert data type : Linear model usually can't handle text feature, so we need conver that into int.  
-4. Feature engineering  
-Most important thing in data science, it decide your model's performance.  
-5. Training model  
-When prepare all need data, we can use it to training our model like XGBoostRegressor.  
-6. Tuneing model paramater  
-This step can imporve your model performance.
+# 常見的建模步驟
+1. 載入資料  
+   沒有資料，沒有模型  
+2. 探索式資料分析(EDA)  
+   將資料視覺化，幫助我們可以了解資料的樣貌，藉以協助我們建立更好的模型
+3. 資料預處理  
+   遺漏值填補：平均數、中位數、眾數；若只有一小部分缺失，可以考慮刪除
+   資料型態轉換：大部分模型無法處理類別的資料，需要將其轉換為數值，常見的方法有 One-hot Encoding  
+4. 特徵工程  
+   非常重要的一環，常聽到「特徵決定模型的上限，演算法只是不斷在逼近這個上限」 
+5. 訓練模型  
+   特徵準備妥當之後，便可開始進行建模
+6. 調整模型參數  
+   模型的參數很多，之間的組合也有許多變化，除了手動調整以外，還可以透過 Grid Search 決定合適的參數  
 
 # Let's quickly bulid XGBoost model!
 For our practice, I want to use the classical liner problem <a href="https://www.kaggle.com/c/house-prices-advanced-regression-techniques/overview" title="Title">House price</a>   
