@@ -44,6 +44,13 @@
        sns.distplot(train['SalePrice'])
        
 # 資料預處理  
+  大部分的模型無法對缺失值、異常值做處理，需要將其填補平均、中位、眾數，甚至必要的話可直接刪除該欄位或該列  
+  
+  可以透過語法統計各欄位的缺失值數量  
+  
+    train.isnull().sum().sort_values(ascending=FALSE)
+    
+    
 # 特徵工程  
 # 訓練模型  
 # 調整模型參數  
