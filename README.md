@@ -23,3 +23,5 @@
     import pandas as pd
     train = pd.read_csv('Desktop/train.csv')
     test  = pd.read_csv('Desktop/test.csv')
+
+# 探索式資料分析(EDA)  
