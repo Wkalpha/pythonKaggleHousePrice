@@ -1,4 +1,10 @@
-# 常見的建模步驟
+大家好，我是 Wkalpha  
+目前正在邁向資料科學家的旅途  
+以下是我關於 Kaggle 的建模經驗分享  
+本篇會以 House Prices 為例  
+有任何問題歡迎來信指教 wkalphakao@gmail.com
+
+# 建模步驟
 1. <a href="https://github.com/Wkalpha/pythonKaggleHousePrice/blob/master/README.md#%E8%BC%89%E5%85%A5%E8%B3%87%E6%96%99">載入資料<a>  
    沒有資料，沒有模型  
 2. 探索式資料分析(EDA)  
