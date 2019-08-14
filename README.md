@@ -29,7 +29,7 @@
 
 1. 透過散佈圖觀察 GrLivArea 與 SalePrice  
 
-       import matplotlib.pyplot as plt  
+       import matplotlib.pyplot as plt
        plt.scatter(GrLivArea,SalePrice)
        
 2. 透過盒鬚圖觀察 OverallQual 與 SalePrice  
