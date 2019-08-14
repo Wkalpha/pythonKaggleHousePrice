@@ -25,3 +25,7 @@
     test  = pd.read_csv('Desktop/test.csv')
 
 # 探索式資料分析(EDA)  
+# 資料預處理  
+# 特徵工程  
+# 訓練模型  
+# 調整模型參數  
