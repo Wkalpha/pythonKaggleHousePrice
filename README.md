@@ -1,5 +1,5 @@
 # 常見的建模步驟
-1. 載入資料  
+1. <a href="https://github.com/Wkalpha/pythonKaggleHousePrice/blob/master/README.md#%E8%BC%89%E5%85%A5%E8%B3%87%E6%96%99">載入資料<a>  
    沒有資料，沒有模型  
 2. 探索式資料分析(EDA)  
    將資料視覺化，幫助我們可以了解資料的樣貌，藉以協助我們建立更好的模型
