@@ -13,4 +13,7 @@
 6. 調整模型參數  
    模型的參數很多，之間的組合也有許多變化，除了手動調整以外，還可以透過 Grid Search 決定合適的參數  
 
-# 載入資料
+# 載入資料  
+    import pandas as pd
+    train = pd.read_csv('Desktop/train.csv')
+    test  = pd.read_csv('Desktop/test.csv')
