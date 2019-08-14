@@ -7,16 +7,16 @@
 # 建模步驟
 1. <a href="https://github.com/Wkalpha/pythonKaggleHousePrice/blob/master/README.md#%E8%BC%89%E5%85%A5%E8%B3%87%E6%96%99">載入資料<a>  
    沒有資料，沒有模型  
-2. 探索式資料分析(EDA)  
+2. <a href="https://github.com/Wkalpha/pythonKaggleHousePrice/blob/master/README.md#%E6%8E%A2%E7%B4%A2%E5%BC%8F%E8%B3%87%E6%96%99%E5%88%86%E6%9E%90eda">探索式資料分析(EDA)<a>  
    將資料視覺化，幫助我們可以了解資料的樣貌，藉以協助我們建立更好的模型
-3. 資料預處理  
+3. <a href="https://github.com/Wkalpha/pythonKaggleHousePrice/blob/master/README.md#%E8%B3%87%E6%96%99%E9%A0%90%E8%99%95%E7%90%86">資料預處理<a>  
    遺漏值填補：平均數、中位數、眾數；若只有一小部分缺失，可以考慮刪除  
    資料型態轉換：大部分模型無法處理類別的資料，需要將其轉換為數值，常見的方法有 One-hot Encoding  
-4. 特徵工程  
+4. <a href="https://github.com/Wkalpha/pythonKaggleHousePrice/blob/master/README.md#%E7%89%B9%E5%BE%B5%E5%B7%A5%E7%A8%8B">特徵工程<a>  
    非常重要的一環，常聽到「特徵決定模型的上限，演算法只是不斷在逼近這個上限」 
-5. 訓練模型  
+5. <a href="https://github.com/Wkalpha/pythonKaggleHousePrice/blob/master/README.md#%E8%A8%93%E7%B7%B4%E6%A8%A1%E5%9E%8B">訓練模型<a>  
    特徵準備妥當之後，便可開始進行建模
-6. 調整模型參數  
+6. <a href="https://github.com/Wkalpha/pythonKaggleHousePrice/blob/master/README.md#%E8%AA%BF%E6%95%B4%E6%A8%A1%E5%9E%8B%E5%8F%83%E6%95%B8">調整模型參數<a>  
    模型的參數很多，之間的組合也有許多變化，除了手動調整以外，還可以透過 Grid Search 決定合適的參數  
 
 # 載入資料  
