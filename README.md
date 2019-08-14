@@ -71,7 +71,27 @@
       MasVnrArea          8
       MasVnrType          8
       Electrical          1
-   對於 PoolQC 我打算直接填補
+   以下是各欄位填補情形  
+      
+      PoolQC           以 0 取代
+      MiscFeature      1406
+      Alley            1369
+      Fence            1179
+      FireplaceQu       690
+      LotFrontage       259
+      GarageCond         81
+      GarageType         81
+      GarageYrBlt        81
+      GarageFinish       81
+      GarageQual         81
+      BsmtExposure       38
+      BsmtFinType2       38
+      BsmtFinType1       37
+      BsmtCond           37
+      BsmtQual           37
+      MasVnrArea          8
+      MasVnrType          8
+      Electrical          1
 # 特徵工程  
 # 訓練模型  
 # 調整模型參數  
