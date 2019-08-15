@@ -23,6 +23,9 @@
     import pandas as pd
     train = pd.read_csv('Desktop/train.csv')
     test  = pd.read_csv('Desktop/test.csv')
+    
+    # 把訓練資料與測試資料合併做預處理，之後再分開
+    all_df = pd.concat((train, test), axis=0)
 
 # 探索式資料分析(EDA)  
   將資料以視覺化方式呈現，散佈圖、直條圖、盒鬚圖等，幫助快速了解資料的型態，以利後續步驟執行  
@@ -71,27 +74,9 @@
       MasVnrArea          8
       MasVnrType          8
       Electrical          1
-   以下是各欄位填補情形  
-      
-      PoolQC           以 0 取代
-      MiscFeature      1406
-      Alley            1369
-      Fence            1179
-      FireplaceQu       690
-      LotFrontage       259
-      GarageCond         81
-      GarageType         81
-      GarageYrBlt        81
-      GarageFinish       81
-      GarageQual         81
-      BsmtExposure       38
-      BsmtFinType2       38
-      BsmtFinType1       37
-      BsmtCond           37
-      BsmtQual           37
-      MasVnrArea          8
-      MasVnrType          8
-      Electrical          1
+   
+   至於欄位要怎麼填補缺失值，需要根據 Domain know how 來判斷，這邊就不一一贅述  
+   
 # 特徵工程  
 # 訓練模型  
 # 調整模型參數  
