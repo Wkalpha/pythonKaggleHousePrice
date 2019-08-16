@@ -4,7 +4,7 @@
 本篇會以 House Prices 為例  
 有任何問題歡迎來信指教 wkalphakao@gmail.com  
 
-<a href="">完整程式碼<a>  
+<a href="https://github.com/Wkalpha/pythonKaggleHousePrice/blob/master/README.md#%E5%AE%8C%E6%95%B4%E7%A8%8B%E5%BC%8F%E7%A2%BC">完整程式碼<a>  
 
 # 建模步驟
 1. <a href="https://github.com/Wkalpha/pythonKaggleHousePrice/blob/master/README.md#%E8%BC%89%E5%85%A5%E8%B3%87%E6%96%99">載入資料<a>  
