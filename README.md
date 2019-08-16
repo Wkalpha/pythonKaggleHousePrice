@@ -1,7 +1,7 @@
 大家好，我是 Wkalpha  
 目前正在邁向資料科學家的旅途  
 以下是我關於 Kaggle 的建模經驗分享  
-本篇會以 House Prices 為例  
+本篇會以 <a href="https://www.kaggle.com/c/house-prices-advanced-regression-techniques/overview">House Prices<a> 為例  
 有任何問題歡迎來信指教 wkalphakao@gmail.com  
 
 <a href="https://github.com/Wkalpha/pythonKaggleHousePrice/blob/master/README.md#%E5%AE%8C%E6%95%B4%E7%A8%8B%E5%BC%8F%E7%A2%BC">完整程式碼<a>  
