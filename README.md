@@ -15,7 +15,12 @@
    遺漏值填補：平均數、中位數、眾數；若只有一小部分缺失，可以考慮刪除  
    資料型態轉換：大部分模型無法處理類別的資料，需要將其轉換為數值，常見的方法有 One-hot Encoding  
 4. <a href="https://github.com/Wkalpha/pythonKaggleHousePrice/blob/master/README.md#%E7%89%B9%E5%BE%B5%E5%B7%A5%E7%A8%8B">特徵工程<a>  
-   非常重要的一環，常聽到「特徵決定模型的上限，演算法只是不斷在逼近這個上限」 
+   非常重要的一環，常聽到「特徵決定模型的上限，演算法只是不斷在逼近這個上限」  
+   有幾種方法  
+   1.混合其他特徵成為新的特徵  
+   2.對特徵做算數  
+   3.切割特徵  
+   
 5. <a href="https://github.com/Wkalpha/pythonKaggleHousePrice/blob/master/README.md#%E8%A8%93%E7%B7%B4%E6%A8%A1%E5%9E%8B">訓練模型<a>  
    特徵準備妥當之後，便可開始進行建模
 6. <a href="https://github.com/Wkalpha/pythonKaggleHousePrice/blob/master/README.md#%E8%AA%BF%E6%95%B4%E6%A8%A1%E5%9E%8B%E5%8F%83%E6%95%B8">調整模型參數<a>  
