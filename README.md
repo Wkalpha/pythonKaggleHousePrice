@@ -23,10 +23,12 @@
    
 5. <a href="https://github.com/Wkalpha/pythonKaggleHousePrice/blob/master/README.md#%E8%A8%93%E7%B7%B4%E6%A8%A1%E5%9E%8B">訓練模型<a>  
    資料及特徵準備妥當之後，便可開始進行建模  
-   這邊我會用多種模型進行預測，取各種模型的最佳解混合  
    
 6. <a href="https://github.com/Wkalpha/pythonKaggleHousePrice/blob/master/README.md#%E8%AA%BF%E6%95%B4%E6%A8%A1%E5%9E%8B%E5%8F%83%E6%95%B8">調整模型參數<a>  
    模型的參數很多，之間的組合也有許多變化，除了手動調整以外，還可以透過 Grid Search 自動尋找合適的參數  
+
+7. 混合模型  
+   混合多種模型，取各長處來改善模型預測能力
 
 # 載入資料  
     import pandas as pd
@@ -89,5 +91,6 @@
 # 特徵工程  
 # 訓練模型  
 # 調整模型參數  
+# 混合模型
 # 完整程式碼  
     # Start here
